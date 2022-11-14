@@ -14,13 +14,13 @@ public class Game {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @Column(name = "title")
+    @Column(name = "title", nullable = false)
     private String title;
-    @Column(name = "yearOfPublication")
+    @Column(name = "yearOfPublication", nullable = false)
     private Integer yearOfPublication;
-    @Column(name = "platform")
+    @Column(name = "platform", nullable = false)
     private Platform platform;
-    @Column(name = "gameGenre")
+    @Column(name = "gameGenre", nullable = false)
     private GameGenre gameGenre;
 }
 
