@@ -22,5 +22,9 @@ public class Game {
     private Platform platform;
     @Column(name = "gameGenre", nullable = false)
     private GameGenre gameGenre;
+
+    @ManyToOne
+    @JoinColumn(name = "cataloger_user_id")
+    private CatalogerUser catalogerUser;
 }
 
