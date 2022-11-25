@@ -41,7 +41,7 @@ public class VinylController {
                 });
     }
 
-    @DeleteMapping("/games/{id}")
+    @DeleteMapping("/vinyls/{id}")
     void deleteVinyl(@PathVariable Long id) {
         vinylRepository.deleteById(id);
     }
