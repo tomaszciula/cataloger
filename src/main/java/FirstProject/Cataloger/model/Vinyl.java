@@ -10,10 +10,12 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Data
+
 public class Vinyl {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+    @Column
     private String bandName;
     @Column(name = "title", nullable = false)
     private String title;
