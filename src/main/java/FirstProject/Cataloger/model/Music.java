@@ -24,7 +24,7 @@ public class Music {
     @Column(name = "media", nullable = false)
     private Media media;
     @Column(name = "musicGenre", nullable = false)
-    private MusicGenre gameGenre;
+    private MusicGenre musicGenre;
 
     @ManyToOne
     @JoinColumn(name = "cataloger_user_id")
